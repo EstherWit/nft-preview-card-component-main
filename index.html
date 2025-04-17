@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{
+  background-color: var(--very-dark-blue-main-bg);
+  font-family: 'Kumbh Sans', sans-serif;
+
+}
+.container {
+  background-color: var(--very-dark-blue-card-bg);
+  max-width: 1440px;
+  width: 25%;
+  height: 32rem;
+  margin: 3rem auto auto auto;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.main img{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+} 
+
+.main h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.creater img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+ 
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="main">
+    <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="etherium">
+     <h3>Equilibrium #3429</h3>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+  </div>
+
+    <div class="price">
+      <img src="./images/icon-ethereum.svg" alt="etherium" class="icon">
+      <span>0.041 ETH</span>
+      <img src="./images/icon-clock.svg" alt="clock" class="icon clock">
+      <span>3 days left</span>
+    </div>
+
+    <div class="divider"></div>
+    <div class="creater">
+      <img src="./images/image-avatar.png" alt="image-avatar" class="avatar">
+      <span>Creation of <strong>Jules Wyvern</strong></span>
+    </div>
+
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
