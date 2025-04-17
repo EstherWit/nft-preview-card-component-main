@@ -32,10 +32,9 @@ body{
   background-color: var(--very-dark-blue-card-bg);
   max-width: 1440px;
   width: 25%;
-  height: 32rem;
-  margin: 3rem auto auto auto;
+  margin: 3rem auto;
   border-radius: 10px;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -45,16 +44,63 @@ body{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between image, h3, and p */
+}
+
 .main img{
-  width: 100%;
+  width: 95%;
   border-radius: 10px;
   margin-bottom: 1rem;
+  display: block;
+  margin: 0;
+
 } 
 
 .main h3{
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
+.main p{
+  font-size: 1rem;
+  color: var( --soft-blue);
+  text-align: center;
+  margin-top: 0.5rem;
+
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: var(--very-dark-blue-line);
+  margin: 1rem 0;
+
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ margin: 1rem 0;
+ gap: 9rem;
+}
+.eth .time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.creater{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+margin-right: 6rem;
+}
+
 .creater img{
   width: 2rem;
   height: 2rem;
@@ -76,12 +122,16 @@ body{
     <p>Our Equilibrium collection promotes balance and calm.</p>
   </div>
 
-    <div class="price">
+  <div class="price">
+    <div class="eth">
       <img src="./images/icon-ethereum.svg" alt="etherium" class="icon">
       <span>0.041 ETH</span>
+    </div>
+    <div class="time">
       <img src="./images/icon-clock.svg" alt="clock" class="icon clock">
       <span>3 days left</span>
     </div>
+  </div>
 
     <div class="divider"></div>
     <div class="creater">
